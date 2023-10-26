@@ -75,10 +75,18 @@ mongoose
 //   .catch((err) => {
 //     console.log('Error 😪', err);
 //   });
-
+/*
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(`App running on port ${port}`);
+});
+*/
+
+const port = process.env.PORT || 3000;
+const host = '0.0.0.0'; // Listen on all network interfaces
+
+const server = app.listen(port, host, () => {
+  console.log(`App running on ${host}:${port}`);
 });
 
 // start: {
