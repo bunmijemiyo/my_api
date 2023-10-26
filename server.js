@@ -83,7 +83,7 @@ const server = app.listen(port, () => {
 */
 
 const port = process.env.PORT || 3000;
-const host = '0.0.0.0'; // Listen on all network interfaces
+const host = '[::]'; // Listen on all network interfaces
 
 const server = app.listen(port, host, () => {
   console.log(`App running on ${host}:${port}`);
