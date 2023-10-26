@@ -36,9 +36,6 @@ const sendErrorDev = (err, res) => {
     message: err.message,
     stack: err.stack,
   });
-  // console.log(`error code: ${err.code}`);
-  // console.log(`error message: ${err.message}`);
-  // console.log(`error name: ${err.name}`);
 };
 
 const sendErrorProd = (err, res) => {
@@ -74,21 +71,8 @@ module.exports = (err, req, res, next) => {
     console.log('production Environment...');
     // eslint-disable-next-line prefer-const, node/no-unsupported-features/es-syntax
     let error = { ...err };
-    // console.log('Error up');
-    // console.log(typeof err);
-    // console.log(Object.keys(err).length);
-    // const keys = Object.keys(err);
-    // console.log(keys[0], 'oo', keys[1], keys[2], keys[3]);
-    // console.log(Object.keys(err)[0]);
-
-    // console.log(err);
-    // console.log('Error down');
 
     const { CastError } = mongoose;
-    // if (err instanceof CastError) console.log('I catch you');
-
-    // if (error.name === 'CastError') error = handleCastErrorDB(error);
-    // sendErrorProd(error, res);
 
     if (err instanceof CastError) {
       error = handleCastErrorDB(error);
@@ -108,8 +92,5 @@ module.exports = (err, req, res, next) => {
     }
 
     sendErrorProd(error, res);
-
-    // console.log(err.name);
-    // console.log(err);
   }
 };
