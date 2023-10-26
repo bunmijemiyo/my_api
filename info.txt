@@ -1,0 +1,51 @@
+http://localhost:3000/api/v1/users/signup
+
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJjZDUyNDYxNDI2N2U3NDdjYjkxNSIsImlhdCI6MTY5NTczMTAyOCwiZXhwIjoxNzAzNTA3MDI4fQ.VW1uFl0maNUy-r6lJoLzfn3QFTfHz37KRkwKEuatqBM
+
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+    "passwordChangedAt": "2023-08-08"
+}
+
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+    "role": "admin"
+}
+
+signup
+{
+    "email": "hello@jonas.com",
+    "fullname": "jonas",
+    "username": "admin"
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+}
+
+{
+    
+    "email": "hello@jonas.com",
+    "password": "pass1234"
+    
+}
+
+{
+    "name": "jonas",
+    "email": "hi@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Y2I4YjBkYmNlMjU1M2NjOGJhNDAyMyIsImlhdCI6MTY5MTQxNzMzMSwiZXhwIjoxNjk5MTkzMzMxfQ._6aJz0s3enLF86qJX__pKfWw_eMAN9XBPXKLPDXBOgY
+
